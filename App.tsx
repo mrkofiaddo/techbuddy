@@ -31,7 +31,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <BuddieScreen/>
+      <ServiceScreen/>
     </SafeAreaView>
   );
 };

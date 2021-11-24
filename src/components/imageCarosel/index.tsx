@@ -4,7 +4,7 @@ import { View,
      FlatList,
      StyleSheet,
      useWindowDimensions,
-     ScrollView
+     
     } from 'react-native'
 
 
@@ -13,7 +13,7 @@ const ImageCarousel = ({images}: {images : string[]}) => {
     const windowWidth = useWindowDimensions().width;
    
     return (
-        <ScrollView>
+        <View >
             <FlatList
                 data = {images}
                 renderItem = {({item}) => (
@@ -32,7 +32,7 @@ const ImageCarousel = ({images}: {images : string[]}) => {
                 }}
                />
             
-        </ScrollView>
+        </View>
     );
 };
 

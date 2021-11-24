@@ -1,11 +1,12 @@
 export default {
   id: '5',
-  title: "Logitech MX Master 3 Advanced Wireless Mouse for Mac - Bluetooth/USB",
+  title: "Virus/Malware removals: Virus and all kinds of virus detection and cleanup",
   description: `Features & details
-  - MAGSPEED WHEEL: Ultra-fast, precise, quiet MagSpeed electromagnetic scrolling
-  - DARKFIELD 4000 DPI SENSOR: Darkfield 4000 DPI sensor for precise tracking on any surface, even glass (up to 4mm in thickness)
-  - COMFORTABLE DESIGN: Tactile reference for hand positioning makes it easy to stay oriented and in your flow
-  - FLOW CROSS-COMPUTER CONTROL: Supports flow cross-computer control across multiple screens. Pair up to 3 devices via Bluetooth Low Energy or Unifying USB receiver`,
+  - "First feature or Detail here
+  - "Second here"
+  - "Third here"
+  - "Fortth here"
+  - Select the approximate number of working days `,
   image: 'https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFzc3dvcmQlMjByZXNldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
   images: [
     'https://images.unsplash.com/photo-1477039181047-efb4357d01bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGFzc3dvcmQlMjByZXNldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',

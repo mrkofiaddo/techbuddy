@@ -1,24 +1,32 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { View, Text,Image } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import styles from './style'
+import DaysSelector from '../DaysSelector'
 
-interface ServiceProps{
-item:{
+interface CartServiceProps{
+Cartitem:{
+    id: string;
+    quantity:number;
+    option?:string;
+    item:{
     id: string;
     title: string;
     image: any;
     avgRating: number;
     ratings: number;
     price: number;
-    oldPrice?:number;   
+    oldPrice?:number;}  
 }
 
 }
-const Services = ({item}: ServiceProps) => {
+const CartServices = ({Cartitem}: CartServiceProps) => {
+    const {quantity: quantityProp,item}= Cartitem;
+    const[quantity,setQuantity]=useState(quantityProp)
     
     return (
-        <View style = {styles.root} > 
+        <View style = {styles.root}>
+        <View style = {styles.row} > 
         <Image style = {styles.image} source={{uri: item.image}}/>
         <View style = {styles.rightHandSide}>
             <Text style ={styles.title} numberOfLines={2} >{item.title}</Text>
@@ -44,8 +52,14 @@ const Services = ({item}: ServiceProps) => {
             </Text>
            
         </View>
+      
     </View>
+        <View style={styles.quantitycontainer}>
+            <DaysSelector day={quantity} setDay={setQuantity}/> 
+        </View> 
+ </View>
+       
     )
 }
 
-export default Services
+export default CartServices
